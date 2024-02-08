@@ -16,6 +16,8 @@ function LandingPage() {
             <div className="contact">CONTACT</div>
           </div>
         </header>
+        <div className="hero">WE ARE CREATIVES</div>
+        <div className="arrow"></div>
       </div>
       <div className="eggSection">
         <div className="eggLeft">
@@ -77,7 +79,7 @@ function LandingPage() {
               We put our trust in Sunnyside and they delivered, making sure our
               needs were met and deadlines were always hit.
             </div>
-            <div className="emilyTitle">
+            <div className="emilyTitle titleFlex">
               <div className="name">Emily R.</div>
               <div className="job">Marketing director</div>
             </div>
@@ -86,7 +88,7 @@ function LandingPage() {
               Sunnyside’s enthusiasm coupled with their keen interest in our
               brand’s success made it a satisfying and enjoyable experience.
             </div>
-            <div className="thomasTitle">
+            <div className="thomasTitle titleFlex">
               <div className="name">Thomas S.</div>
               <div className="job">Chief Operating Officer</div>
             </div>
@@ -95,13 +97,35 @@ function LandingPage() {
               Incredible end result! Our sales increased over 400% when we
               worked with Sunnyside. Highly recommended!
             </div>
-            <div className="jennieTitle">
+            <div className="jennieTitle titleFlex">
               <div className="name">Jennie F.</div>
-              <div className="job">Marketing director</div>
+              <div className="job">Business Owner</div>
             </div>
           </div>
         </div>
       </div>
+      <div className="imageRow">
+        <div className="milk"></div>
+        <div className="oSlice"></div>
+        <div className="cone"></div>
+        <div className="cubes"></div>
+      </div>
+      <footer>
+        <div className="footerWrapper">
+          <div className="footSunnyside sunnyside">sunnyside</div>
+          <div className="subLinks">
+            <div className="fAbout">About</div>
+            <div className="fServices">Services</div>
+            <div className="fProjects">Projects</div>
+          </div>
+          <div className="socials">
+            <div className="facebook icon"></div>
+            <div className="instagram icon"></div>
+            <div className="twitter icon"></div>
+            <div className="pinterest icon"></div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

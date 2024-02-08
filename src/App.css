@@ -8,9 +8,11 @@ body{
     background: url('./images/desktop/image-header.jpg') repeat center;
     background-size: contain;
     min-height: 50rem;
+    display: flex;
+    flex-direction: column;
 }
 .sunnyside{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
 }
 .navbar{
@@ -22,6 +24,22 @@ body{
     font-weight: 700;
     align-items: center;
     padding: 2.13rem 2.5rem 0 2.5rem;
+}
+.hero{
+    font-family: "Fraunces", serif;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 6.56rem;
+    color:white;
+    font-weight: 900;
+    letter-spacing: 0.54688rem;
+}
+.arrow{
+    background: url('./images/icon-arrow-down.svg') no-repeat center;
+    width: 1.875rem;
+    height: 6.7rem;
+    align-self: center;
+    margin-top: 6rem;
 }
 .links{
     display: flex;
@@ -237,10 +255,10 @@ div.testimonialWrapper{
 .testHeader{
     font-family: "Fraunces", serif;
     letter-spacing: 0.3125rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 900;
     color: #A7AAAD;
-    padding-bottom:4rem;
+    padding-bottom: 5.5rem;
 }
 .testText{
     font-size: 1.125rem;
@@ -257,6 +275,90 @@ div.testimonialWrapper{
 }
 .job{
     color: hsl(210, 4%, 67%);
-    font-family: 'Barlow';
+    font-family: 'Barlow', sans-serif;
     font-weight: 600;
+}
+
+.titleFlex{
+    display: flex;
+    flex-direction: column;
+    gap: 0.56rem;
+}
+
+.imageRow{
+    min-height: 28rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.imageRow>*{
+    min-height: 28rem;
+}
+
+
+.milk{
+    background: url('./images/desktop/image-gallery-milkbottles.jpg') no-repeat center/cover;
+}
+.oSlice{
+    background: url('./images/desktop/image-gallery-orange.jpg') no-repeat center/cover;
+}
+.cone{
+    background: url('./images/desktop/image-gallery-cone.jpg') no-repeat center/cover;
+}
+.cubes{
+    background: url('./images/desktop/image-gallery-sugarcubes.jpg') no-repeat center/cover;
+}
+footer{
+    min-height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footerWrapper{
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footSunnyside{
+    text-align: center;
+    color: hsl(213, 9%, 39%);
+    font-size: 2rem;
+}
+.subLinks{
+    display: flex;
+    padding: 2.12rem 0 4.56rem 0;
+    gap: 4rem;
+    justify-content: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: hsl(213, 9%, 39%);
+}
+.subLinks > *{
+    cursor: pointer;
+}
+
+.icon{
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    max-width: 10.25rem;
+    gap: 1.75rem;
+}
+.facebook{
+    background: url('./images/icon-facebook.svg') no-repeat center/cover;
+}
+.instagram{
+    background: url('./images/icon-instagram.svg') no-repeat center/cover;
+}
+.twitter{
+    background: url('./images/icon-twitter.svg') no-repeat center/cover;
+}
+.pinterest{
+    background: url('./images/icon-pinterest.svg') no-repeat center/cover;
 }
