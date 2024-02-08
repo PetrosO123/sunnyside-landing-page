@@ -1,38 +1,262 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.orange{
+    background: url('./images/desktop/image-header.jpg') repeat center;
+    background-size: contain;
+    min-height: 50rem;
+}
+.sunnyside{
+    font-size: 24px;
+    font-weight: 900;
+}
+.navbar{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    align-items: center;
+    padding: 2.13rem 2.5rem 0 2.5rem;
+}
+.links{
+    display: flex;
+    gap: 1.5rem;
+    /* border: 2px solid black; */
+    align-items: center;
+    font-size: 1.125rem;
+}
+.links>*{
+    cursor: pointer;
+}
+.contact{
+    padding: 1em 2em;
+    /* border:2px solid black; */
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-family: "Fraunces", serif;
+}
+.contact:hover{
+    color: white;
+    background-color: skyblue;
+}
+.eggSection{
+    min-height: 37.5rem;
+    /* border: 2px solid black; */
+    display: flex;
+}
+.eggLeft{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.eggLeftWrapper{
+    /* background-color: blue; */
+    /* padding: 9rem 7rem; */
+    max-width: 28.8125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* border: 2px solid black; */
+}
+.header{
+    color: #24303E;
+    font-family: "Fraunces", serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+
+}
+.subheader{
+    color: #808397;
+    font-family: 'Barlow';
+    margin-bottom: 0.5rem;;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.875rem; /* 166.667% */
+    letter-spacing: -0.00806rem;
+}
+.learnMore{
+    color: #24303E;
+    font-family: "Fraunces", serif;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.5625rem; /* 166.667% */
+    letter-spacing: 0.0625rem;
+    cursor: pointer;
+}
+.egg{
+    background: url('./images/desktop/image-transform.jpg') repeat center;
+    background-size: contain;
+    min-height: 37.5rem;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.eggLeft, .egg{
+    flex: 0 0 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.glassSection{
+    min-height: 37.5rem;
+    display: flex;
+}
+.glassRight, .glass{
+    flex: 0 0 50%;
+}
+.glassRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glassRightWrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 28.8125rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.glass{
+    background: url('./images/desktop/image-stand-out.jpg') no-repeat center/cover;
+    min-height: 37.5rem;;
+
+}
+.fruitSection{
+    display: flex;
+}
+.cherry{
+    background: url('./images/desktop/image-graphic-design.jpg') no-repeat center/cover;
+
+
+}
+.stemOrange{
+    background: url('./images/desktop/image-photography.jpg') no-repeat center/cover;
+}
+.cherry, .stemOrange{
+    min-height: 37.5rem;
+    flex: 0 0 50%;
+    min-height: 37.5rem;
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2.7rem;
 }
 
-.App-link {
-  color: #61dafb;
+.cherryWrapper, .stemOrangeWrapper{
+    max-width: 22rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.cherryWrapperHeading, .stemOrangeWrapperHeading{
+    font-size: 2rem;
+    /* text-align: center; */
+}
+.cherryWrapperSubheading, .stemOrangeWrapperSubheading{
+    /* text-align: center; */
+    color: hsl(213, 9%, 39%);
+    line-height: 1.6875rem; /* 168.75% */
+    letter-spacing: -0.00713rem;
+    /* text-align: center; */
+    width: 24rem;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stemOrangeWrapperSubheading{
+    color: hsl(198, 62%, 26%)
+}
+
+.testimonialSection{
+    min-height: 48.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.testimonialWrapper{
+    width: 70rem;
+    text-align: center;
+}
+.testImage{
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    align-self: center;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "emily thomas jennie"
+    "eTest tTest jTest"
+    "eTitle tTitle jTitle";
+    column-gap: 2rem;
+    row-gap: 3.4rem;
+}
+.emily{
+    grid-area: emily;
+}
+.thomas{
+    grid-area: thomas;
+}
+.jennie{
+    grid-area: jennie;
+}
+.testImage{
+    justify-self: center;
+}
+.emilyText{
+    grid-area: eTest;
+}
+.thomasText{
+    grid-area: tTest;
+}
+.jennieText{
+    grid-area: jTest;
+}
+.emilyTitle{
+    grid-area: eTitle;
+}
+.thomasTitle{
+    grid-area: tTitle;
+}
+.jennieTitle{
+    grid-area: jTitle;
+}
+.testHeader{
+    font-family: "Fraunces", serif;
+    letter-spacing: 0.3125rem;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #A7AAAD;
+    padding-bottom:4rem;
+}
+.testText{
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem; /* 177.778% */
+    letter-spacing: -0.00806rem;
+    color: #5B636D;
+}
+.name{
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 1.125rem;
+}
+.job{
+    color: hsl(210, 4%, 67%);
+    font-family: 'Barlow';
+    font-weight: 600;
 }
