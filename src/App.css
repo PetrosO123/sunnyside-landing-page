@@ -5,8 +5,8 @@ body{
     margin: 0;
 }
 .orange{
-    background: url('./images/desktop/image-header.jpg') repeat center;
-    background-size: contain;
+    background: url('./images/desktop/image-header.jpg') no-repeat center;
+    background-size: cover;
     min-height: 50rem;
     display: flex;
     flex-direction: column;
